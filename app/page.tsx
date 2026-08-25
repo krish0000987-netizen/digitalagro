@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HeroSlideshow from "./components/HeroSlideshow";
 import HappyFarmers from "./components/HappyFarmers";
+import HomeVideoSection from "./components/HomeVideoSection";
 
 export default function Home() {
   return (
@@ -178,6 +179,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <HomeVideoSection />
 
       {/* Agriculture Showcase Masonry */}
       <section className="max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:py-24">
