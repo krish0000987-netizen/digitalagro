@@ -26,6 +26,13 @@
 
 * {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 76px;
 }
 
 body {
@@ -33,6 +40,19 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-x: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Safe area for iPhone notch + bottom bar */
+.safe-pb {
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
 }
 
 .font-display {
@@ -89,3 +109,18 @@ body {
 /* Hide scrollbar for horizontal scroll */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Mobile friendly: prevent horizontal scroll from wide elements */
+@media (max-width: 640px) {
+  .card-hover:hover {
+    transform: none;
+  }
+  /* Ensure touch targets minimum 44px */
+  a, button {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  a.rounded-full, button.rounded-full {
+    min-height: unset;
+  }
+}

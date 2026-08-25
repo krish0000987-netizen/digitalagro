@@ -1,7 +1,6 @@
 import Link from "next/link";
 import HeroSlideshow from "./components/HeroSlideshow";
 import HappyFarmers from "./components/HappyFarmers";
-import HomeVideoSection from "./components/HomeVideoSection";
 
 export default function Home() {
   return (
@@ -24,7 +23,7 @@ export default function Home() {
             <p className="text-[#5a6b5a] leading-relaxed mt-6 text-[15px] lg:text-[16px]">
               Digital Agro Farming Services is dedicated to helping cultivate healthy, productive and sustainable agricultural environments. We bring together practical expertise in agriculture, plantation, farm development and green space creation — delivering quality-focused solutions tailored to your land and vision.
             </p>
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
               {[
                 ["🌱", "Sustainable Practices", "Environment-first farming methods"],
                 ["🌾", "Quality Focused", "Attention to every detail"],
@@ -179,8 +178,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <HomeVideoSection />
 
       {/* Agriculture Showcase Masonry */}
       <section className="max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:py-24">

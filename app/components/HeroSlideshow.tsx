@@ -48,7 +48,7 @@ export default function HeroSlideshow() {
   }, []);
   const s = slides[idx];
   return (
-    <section className="relative h-[92vh] min-h-[640px] max-h-[880px] overflow-hidden bg-[#0e2e1f]">
+    <section className="relative h-[88vh] min-h-[560px] sm:min-h-[640px] max-h-[880px] overflow-hidden bg-[#0e2e1f]">
       {/* Images */}
       {slides.map((slide, i) => (
         <div key={i} className={`absolute inset-0 transition-all duration-[1400ms] ease-in-out ${i === idx ? "opacity-100 scale-100" : "opacity-0 scale-[1.06]"}`}>
@@ -59,7 +59,7 @@ export default function HeroSlideshow() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 h-full max-w-[1440px] mx-auto px-6 lg:px-8 flex flex-col justify-center pt-16">
+      <div className="relative z-10 h-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center pt-16 sm:pt-16 pb-16 sm:pb-0">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-2 mb-6">
             <span className="w-2 h-2 bg-[#7bc47f] rounded-full animate-pulse" />
@@ -67,9 +67,9 @@ export default function HeroSlideshow() {
           </div>
 
           <h1 className="font-display font-bold leading-[0.9] tracking-tight text-white">
-            <span className="block text-[42px] sm:text-[56px] lg:text-[72px]">{s.title}</span>
-            <span className="block text-[42px] sm:text-[56px] lg:text-[72px] text-[#a8e0a8] italic font-normal">{s.highlight}</span>
-            <span className="block text-[32px] sm:text-[42px] lg:text-[52px] font-light opacity-90 mt-1">{s.sub}</span>
+            <span className="block text-[34px] sm:text-[48px] lg:text-[72px]">{s.title}</span>
+            <span className="block text-[34px] sm:text-[48px] lg:text-[72px] text-[#a8e0a8] italic font-normal">{s.highlight}</span>
+            <span className="block text-[26px] sm:text-[36px] lg:text-[52px] font-light opacity-90 mt-1">{s.sub}</span>
           </h1>
 
           <p className="text-white/80 text-[15px] lg:text-[17px] leading-relaxed mt-6 max-w-xl text-balance">{s.desc}</p>
