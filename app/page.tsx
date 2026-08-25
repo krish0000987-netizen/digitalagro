@@ -1,69 +1,261 @@
-import Image from "next/image";
+import Link from "next/link";
+import HeroSlideshow from "./components/HeroSlideshow";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="bg-[#fdfcf8]">
+      <HeroSlideshow />
+
+      {/* Trust Introduction */}
+      <section className="max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-[#e8f5e9] rounded-full px-4 py-2 mb-5">
+              <span className="w-1.5 h-1.5 bg-[#2e7d32] rounded-full" />
+              <span className="text-[#14532d] text-xs font-semibold tracking-widest uppercase">Who We Are</span>
+            </div>
+            <h2 className="font-display text-[34px] lg:text-[48px] font-bold leading-[1.05] tracking-tight text-[#0e2e1f]">
+              Professional Agro Farming <br />
+              <span className="text-[#1a5c2a] italic font-normal">Solutions With a</span> <br />
+              Passion for Growth
+            </h2>
+            <p className="text-[#5a6b5a] leading-relaxed mt-6 text-[15px] lg:text-[16px]">
+              Digital Agro Farming Services is dedicated to helping cultivate healthy, productive and sustainable agricultural environments. We bring together practical expertise in agriculture, plantation, farm development and green space creation — delivering quality-focused solutions tailored to your land and vision.
+            </p>
+            <div className="grid grid-cols-2 gap-4 mt-8">
+              {[
+                ["🌱", "Sustainable Practices", "Environment-first farming methods"],
+                ["🌾", "Quality Focused", "Attention to every detail"],
+                ["🤝", "Reliable Service", "Committed to your success"],
+                ["🌳", "Green Development", "Building greener futures"],
+              ].map(([icon, title, desc]) => (
+                <div key={title} className="bg-white border border-stone-100 rounded-2xl p-5 card-hover">
+                  <div className="text-xl mb-2">{icon}</div>
+                  <div className="font-semibold text-sm text-[#0e2e1f]">{title}</div>
+                  <div className="text-xs text-[#6b7c6b] mt-1 leading-relaxed">{desc}</div>
+                </div>
+              ))}
+            </div>
+            <Link href="/about" className="inline-flex items-center gap-2 mt-8 bg-[#0e2e1f] text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-black transition-colors">Learn More About Us →</Link>
+          </div>
+          <div className="relative">
+            <div className="rounded-[32px] overflow-hidden shadow-2xl shadow-green-900/10">
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80" alt="Premium farm" className="w-full h-[520px] lg:h-[640px] object-cover" />
+            </div>
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-3xl p-6 shadow-xl border border-stone-100 max-w-[300px] hidden lg:block">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-full bg-[#e8f5e9] flex items-center justify-center">🌿</div>
+                <div className="text-sm font-bold text-[#0e2e1f]">Cultivating Excellence</div>
+              </div>
+              <p className="text-xs text-[#6b7c6b] leading-relaxed">Professional agricultural solutions designed around your soil, climate and goals.</p>
+            </div>
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#c9a86a]/10 rounded-full blur-2xl" />
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Services */}
+      <section className="bg-[#f8f5ee] py-16 lg:py-24">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-white border border-stone-200 rounded-full px-4 py-2 mb-4">
+                <span className="w-1.5 h-1.5 bg-[#c9a86a] rounded-full" />
+                <span className="text-xs font-semibold tracking-widest uppercase text-[#5a6b5a]">What We Do</span>
+              </div>
+              <h2 className="font-display text-[32px] lg:text-[44px] font-bold leading-none text-[#0e2e1f]">Comprehensive <span className="text-[#1a5c2a] italic font-normal">Agricultural</span> Services</h2>
+            </div>
+            <p className="max-w-md text-[#6b7c6b] text-sm leading-relaxed">From farm development to plantation management — practical solutions for every stage of your agricultural journey.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { title: "Agro Farming", desc: "Complete farming solutions from planning to harvest.", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80", icon: "🌾" },
+              { title: "Plantation Services", desc: "Creating thriving green spaces that last generations.", img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80", icon: "🌳" },
+              { title: "Farm Development", desc: "Transforming land into productive agricultural spaces.", img: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&q=80", icon: "🏞️" },
+              { title: "Tree Plantation", desc: "Large-scale plantation and green belt development.", img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80", icon: "🌱" },
+              { title: "Agricultural Solutions", desc: "Tailored strategies for your unique requirements.", img: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80", icon: "⚙️" },
+              { title: "Sustainable Farming", desc: "Responsible practices for long-term productivity.", img: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80", icon: "♻️" },
+              { title: "Farm Maintenance", desc: "Ongoing care to keep your farm at its best.", img: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80", icon: "🔧" },
+              { title: "Custom Solutions", desc: "Bespoke agricultural projects built around you.", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80", icon: "✨" },
+            ].map((c) => (
+              <div key={c.title} className="group bg-white rounded-[24px] overflow-hidden border border-stone-100 card-hover">
+                <div className="h-44 overflow-hidden relative">
+                  <img src={c.img} alt={c.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute top-4 left-4 w-9 h-9 bg-white rounded-full flex items-center justify-center text-sm shadow-md">{c.icon}</div>
+                </div>
+                <div className="p-6">
+                  <h3 className="font-semibold text-[#0e2e1f]">{c.title}</h3>
+                  <p className="text-sm text-[#6b7c6b] leading-relaxed mt-2 min-h-[40px]">{c.desc}</p>
+                  <Link href="/services" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1a5c2a] mt-4 group-hover:gap-2.5 transition-all">Learn More →</Link>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Agriculture Showcase Masonry */}
+      <section className="max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="inline-flex items-center gap-2 bg-[#e8f5e9] rounded-full px-4 py-2 mb-4">
+            <span className="w-1.5 h-1.5 bg-[#2e7d32] rounded-full" />
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#14532d]">Our World</span>
+          </div>
+          <h2 className="font-display text-[32px] lg:text-[44px] font-bold leading-none text-[#0e2e1f]">Agriculture <span className="italic font-normal text-[#1a5c2a]">in Focus</span></h2>
+          <p className="text-[#6b7c6b] text-sm mt-4">A glimpse into the fields, plantations and landscapes we help cultivate.</p>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+          <div className="rounded-[24px] overflow-hidden row-span-2">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80" alt="Farm" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="rounded-[24px] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="Plantation" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="rounded-[24px] overflow-hidden row-span-2">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80" alt="Crops" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="rounded-[24px] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&q=80" alt="Fields" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="rounded-[24px] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" alt="Sunrise farm" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="rounded-[24px] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="Trees" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="rounded-[24px] overflow-hidden lg:col-span-2">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1000&q=80" alt="Agriculture" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="rounded-[24px] overflow-hidden hidden lg:block">
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Farm landscape" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+        </div>
+        <div className="text-center mt-8">
+          <Link href="/gallery" className="inline-flex items-center gap-2 border border-stone-200 bg-white px-7 py-3 rounded-full font-semibold text-sm hover:bg-[#0e2e1f] hover:text-white hover:border-[#0e2e1f] transition-colors">View Full Gallery →</Link>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="bg-[#0e2e1f] relative overflow-hidden py-16 lg:py-24">
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80")`, backgroundSize: "cover", backgroundPosition: "center" }} />
+        <div className="absolute inset-0 bg-[#0e2e1f]/90" />
+        <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2 mb-4">
+                <span className="w-1.5 h-1.5 bg-[#7bc47f] rounded-full" />
+                <span className="text-xs font-semibold tracking-widest uppercase text-white/80">Why Choose Us</span>
+              </div>
+              <h2 className="font-display text-[32px] lg:text-[44px] font-bold leading-none text-white">Built on Trust. <br /><span className="italic font-normal text-[#a8e0a8]">Grown with Care.</span></h2>
+            </div>
+            <p className="max-w-md text-white/60 text-sm leading-relaxed">We combine agricultural insight with a commitment to quality, sustainability and customer-focused service.</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { title: "Quality Focused", desc: "Every project receives meticulous attention to detail and a commitment to lasting results.", icon: "◆" },
+              { title: "Professional Approach", desc: "Structured planning, clear communication and reliable execution at every stage.", icon: "⬢" },
+              { title: "Sustainable Practices", desc: "Responsible farming methods that protect soil, water and biodiversity.", icon: "✦" },
+              { title: "Reliable Service", desc: "Dependable support from consultation through implementation and maintenance.", icon: "◈" },
+              { title: "Agriculture Expertise", desc: "Practical knowledge across farming, plantation and land development.", icon: "❖" },
+              { title: "Customer-Focused", desc: "Solutions adapted to your land, climate and agricultural goals.", icon: "⟡" },
+            ].map((c) => (
+              <div key={c.title} className="bg-white/5 backdrop-blur-md border border-white/10 rounded-[24px] p-7 hover:bg-white/10 transition-colors">
+                <div className="w-10 h-10 rounded-full bg-[#1a5c2a] flex items-center justify-center text-white text-sm mb-5">{c.icon}</div>
+                <h3 className="font-semibold text-white">{c.title}</h3>
+                <p className="text-sm text-white/60 leading-relaxed mt-2">{c.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Plantation Banner */}
+      <section className="relative h-[420px] lg:h-[520px] overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80" alt="Plantation" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-[#0e2e1f]/55" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+          <h2 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-none">Let’s Grow Something <br /><span className="italic font-normal text-[#a8e0a8]">That Lasts.</span></h2>
+          <p className="text-white/80 text-sm lg:text-base mt-4 max-w-xl">Whether it’s a farm, plantation or green belt — let’s create landscapes that thrive for generations.</p>
+          <Link href="/contact" className="mt-8 inline-flex items-center gap-3 bg-white text-[#0e2e1f] px-8 py-4 rounded-full font-semibold hover:bg-[#f4f1ea] transition-colors">Talk to Our Team <span className="w-7 h-7 bg-[#0e2e1f] text-white rounded-full flex items-center justify-center text-xs">→</span></Link>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-2 bg-[#f8f5ee] border border-stone-200 rounded-full px-4 py-2 mb-4">
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#5a6b5a]">How We Work</span>
+          </div>
+          <h2 className="font-display text-[32px] lg:text-[44px] font-bold leading-none text-[#0e2e1f]">From Vision <span className="italic font-normal text-[#1a5c2a]">to Harvest</span></h2>
+          <p className="text-[#6b7c6b] text-sm mt-4">A clear, structured process that ensures every project is planned and executed with precision.</p>
+        </div>
+
+        {/* Desktop horizontal */}
+        <div className="hidden lg:grid grid-cols-5 gap-6 relative">
+          <div className="absolute top-[42px] left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-[#c9a86a]/40 to-transparent" />
+          {[
+            { n: "01", t: "Consultation", d: "Understand your goals, land and requirements in detail." },
+            { n: "02", t: "Site Assessment", d: "Evaluate soil, water, climate and site conditions." },
+            { n: "03", t: "Planning", d: "Create a tailored agricultural and plantation plan." },
+            { n: "04", t: "Implementation", d: "Execute with professional care and precision." },
+            { n: "05", t: "Maintenance", d: "Ongoing support to ensure long-term success." },
+          ].map((s) => (
+            <div key={s.n} className="text-center">
+              <div className="w-20 h-20 mx-auto rounded-full bg-white border-2 border-[#e8f5e9] flex flex-col items-center justify-center shadow-lg relative">
+                <span className="text-xs font-bold tracking-widest text-[#1a5c2a]">{s.n}</span>
+                <span className="w-1 h-1 bg-[#c9a86a] rounded-full mt-1" />
+              </div>
+              <h3 className="font-semibold text-[#0e2e1f] mt-4">{s.t}</h3>
+              <p className="text-xs text-[#6b7c6b] leading-relaxed mt-2">{s.d}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile vertical */}
+        <div className="lg:hidden relative">
+          <div className="absolute left-[22px] top-4 bottom-4 w-px bg-[#e8e8e0]" />
+          <div className="space-y-6">
+            {[
+              { n: "01", t: "Consultation", d: "Understand your goals, land and requirements in detail." },
+              { n: "02", t: "Site Assessment", d: "Evaluate soil, water, climate and site conditions." },
+              { n: "03", t: "Planning", d: "Create a tailored agricultural and plantation plan." },
+              { n: "04", t: "Implementation", d: "Execute with professional care and precision." },
+              { n: "05", t: "Maintenance", d: "Ongoing support to ensure long-term success." },
+            ].map((s) => (
+              <div key={s.n} className="flex gap-4">
+                <div className="w-11 h-11 rounded-full bg-[#0e2e1f] text-white flex items-center justify-center text-xs font-bold shrink-0 z-10">{s.n}</div>
+                <div className="bg-white border border-stone-100 rounded-2xl p-5 flex-1">
+                  <h3 className="font-semibold text-[#0e2e1f] text-sm">{s.t}</h3>
+                  <p className="text-xs text-[#6b7c6b] mt-1">{s.d}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="mx-4 lg:mx-8 mb-8">
+        <div className="max-w-[1440px] mx-auto bg-gradient-to-br from-[#0e2e1f] via-[#14532d] to-[#1a5c2a] rounded-[32px] overflow-hidden relative">
+          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80")`, backgroundSize: "cover" }} />
+          <div className="relative grid lg:grid-cols-2 gap-8 px-8 lg:px-12 py-12 lg:py-16 items-center">
+            <div>
+              <h2 className="font-display text-[30px] lg:text-[42px] font-bold leading-none text-white">Ready to Build a <br /><span className="italic font-normal text-[#a8e0a8]">Healthier, Greener Farm?</span></h2>
+              <p className="text-white/70 text-sm leading-relaxed mt-4 max-w-md">Contact Digital Agro Farming Services today to discuss your agricultural requirements. We’re ready to help you grow.</p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 lg:justify-end">
+              <a href="tel:+919593069126" className="inline-flex items-center justify-center gap-2 bg-white text-[#0e2e1f] px-8 py-4 rounded-full font-bold hover:bg-[#f4f1ea] transition-colors">📞 Call Now</a>
+              <a href="https://wa.me/919593069126?text=Hello%20Digital%20Agro%20Farming%20Services%2C%20I%20would%20like%20to%20know%20more%20about%20your%20agricultural%20services." target="_blank" className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:bg-[#1fb255] transition-colors">💬 WhatsApp Us</a>
+            </div>
+          </div>
+          <div className="relative border-t border-white/10 px-8 lg:px-12 py-4 flex flex-wrap items-center justify-between gap-3 text-sm text-white/60">
+            <span>📞 +91 95930 69126 — Available for consultations</span>
+            <Link href="/contact" className="text-white font-semibold hover:text-[#a8e0a8]">Get in touch →</Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
