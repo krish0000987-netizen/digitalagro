@@ -19,14 +19,18 @@ const products = [
   {
     id: "02",
     name: "ACTIVMAX",
-    subtitle: "Biostimulant • Ecofriendly",
+    subtitle: "Seaweed Extract Biostimulant • 100 ml • ₹180",
     variant: "100 ml",
     price: 180,
     mrp: "₹180",
-    desc: "Ecofriendly Biostimulant derived from organic plant sources. Improves plant growth, crop productivity and greenness. Blue-label trusted formulation.",
-    benefits: ["Organic Source", "Growth Booster", "Greenness"],
+    desc: "Premium seaweed-extract biostimulant (100 ml — ₹180) derived through a unique process. Safe, non-toxic, organic in nature — maximizes growth & yield, germination, root growth, flowering & fruiting.",
+    details: "Product derived from Seaweed Extracts through unique process. It helps promote plant growth, improves photosynthetic activity, protects from damage due to environmental stress, improves absorption and transport of nutrients inside plant. Safe and non-toxic. It helps to maximize growth and yield, seed germination, stimulate root growth, better flowering and fruiting, better fruit quality, improve soil micro flora. It is Organic in nature, over 60 minerals, elements & 21 amino acids. Naturally contains Hydrolyzed Proteins & amino acid, Humic acid, Polysaccharides, Oceanic Plant Extract, Microbial metabolites. Majorly used for vegetable & fruit crops like Paddy, Wheat, Sugarcane, Cotton, Chilli, Potato, Tomato, Soyabean, Onion, Garlic, Apple, Banana, Grapes, Tea and all major fields & horticulture crops.",
+    bullets: ["Promotes plant growth & photosynthetic activity", "Protects from environmental stress", "Improves nutrient absorption & transport", "Stimulates root growth, flowering & fruiting", "Better fruit quality & soil micro flora", "Safe, non-toxic & organic"],
+    composition: "Over 60 minerals & elements, 21 amino acids, Hydrolyzed Proteins, Humic Acid, Polysaccharides, Oceanic Plant Extract, Microbial Metabolites — Seaweed Extract base",
+    crops: "Paddy, Wheat, Sugarcane, Cotton, Chilli, Potato, Tomato, Soyabean, Onion, Garlic, Apple, Banana, Grapes, Tea + all field & horticulture crops",
+    benefits: ["Seaweed Extract", "60+ Minerals", "21 Amino Acids"],
     img: "/products/activmax-100ml-180.jpg",
-    tag: "BIOSTIMULANT",
+    tag: "100ML • ₹180",
     color: "bg-[#e3f2fd] border-[#90caf9]",
   },
   {
@@ -45,14 +49,18 @@ const products = [
   {
     id: "04",
     name: "ACTIVMAX",
-    subtitle: "Best Seller • 500 ml",
+    subtitle: "Seaweed Extract • Best Seller • 500 ml",
     variant: "500 ml",
     price: 800,
     mrp: "₹800",
-    desc: "Best Seller — 500 ml ACTIVMAX Biostimulant. Large economy pack for full-season crop care. Ecofriendly, organic-derived, loved by thousands of farmers.",
-    benefits: ["Best Seller", "500 ml Economy", "Full Season Care"],
+    desc: "Best Seller — 500 ml ACTIVMAX (same seaweed-extract premium formula as 100ml). Economy pack for full-season care across all crops. Safe, organic, non-toxic.",
+    details: "Same premium Seaweed Extract formulation as 100ml — derived through unique process. Promotes growth, improves photosynthetic activity, protects from environmental stress, improves nutrient absorption & transport. Maximizes growth & yield, germination, root growth, flowering & fruiting, fruit quality, soil micro flora. Organic — 60+ minerals, 21 amino acids, Hydrolyzed Proteins, Humic Acid, Polysaccharides, Oceanic Plant Extract, Microbial Metabolites. Used for Paddy, Wheat, Sugarcane, Cotton, Chilli, Potato, Tomato, Soyabean, Onion, Garlic, Apple, Banana, Grapes, Tea and all horticulture crops.",
+    bullets: ["Same 100ml seaweed formula — 500ml economy", "Maximizes germination, root & fruiting", "Improves soil micro flora"],
+    composition: "Seaweed Extract — 60+ minerals, 21 amino acids, Humic Acid, Polysaccharides",
+    crops: "All field & horticulture crops — Paddy, Wheat, Chilli, Potato, Tomato, Onion, Garlic, Apple, Banana, Grapes, Tea",
+    benefits: ["Best Seller", "500 ml Economy", "Seaweed Extract"],
     img: "/products/activmax-500ml-800.jpg",
-    tag: "BEST SELLER",
+    tag: "BEST SELLER • 500ML",
     color: "bg-[#e3f2fd] border-[#1e88e5]",
   },
   {
@@ -146,6 +154,56 @@ export default function Products() {
           ))}
         </div>
 
+        {/* Featured Detail — ACTIVMAX 100ml • ₹180 — Full Description as per your doc */}
+        <div className="mt-10 bg-gradient-to-br from-[#e3f2fd] to-white rounded-[28px] border-2 border-[#90caf9] overflow-hidden">
+          <div className="grid lg:grid-cols-[380px_1fr] gap-0">
+            <div className="bg-white p-8 flex flex-col items-center justify-center border-b lg:border-b-0 lg:border-r border-stone-100">
+              <div className="bg-[#0e2e1f] text-white text-xs font-bold tracking-widest px-3 py-1.5 rounded-full mb-4">FEATURED • 100ML • ₹180</div>
+              <img src="/products/activmax-100ml-180.jpg" alt="ACTIVMAX 100ml" className="w-48 h-64 object-contain" />
+              <h3 className="font-display text-2xl font-bold text-[#0e2e1f] mt-4">ACTIVMAX</h3>
+              <p className="text-xs font-bold tracking-widest uppercase text-[#1a5c2a]">Seaweed Extract Biostimulant</p>
+              <div className="mt-3 bg-[#c9a86a] text-[#0e2e1f] px-6 py-2 rounded-full font-bold">100 ml — ₹180</div>
+              <p className="text-[11px] text-[#6b7c6b] mt-2">Also available: 500 ml — ₹800 (Best Seller)</p>
+              <a href="https://wa.me/919593069126?text=Hello%20I%20want%20to%20order%20ACTIVMAX%20100ml%20at%20Rs.180" target="_blank" className="mt-4 w-full bg-[#1a5c2a] text-white rounded-full py-3 font-bold text-sm text-center">Order Now on WhatsApp →</a>
+            </div>
+            <div className="p-6 lg:p-8">
+              <div className="inline-flex items-center gap-2 bg-[#e8f5e9] rounded-full px-3 py-1.5 mb-3">
+                <span className="w-1.5 h-1.5 bg-[#1a5c2a] rounded-full" />
+                <span className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f]">Product Details — As Per Your Document</span>
+              </div>
+              <h4 className="font-display text-xl font-bold text-[#0e2e1f]">ACTIVMAX — Seaweed Extract Biostimulant (100 ml • ₹180)</h4>
+              <p className="text-sm text-[#0e2e1f] leading-relaxed mt-3">Product derived from <b>Seaweed Extracts</b> through unique process. It helps promote plant growth, improves photosynthetic activity, protects from damage due to environmental stress, improves absorption and transport of nutrients inside plant. <b>Safe and non-toxic.</b></p>
+              <p className="text-sm text-[#5a6b5a] leading-relaxed mt-3">It helps to <b>maximize growth and yield</b>, seed germination, stimulate root growth, better flowering and fruiting, better fruit quality, improve soil micro flora. It is <b>Organic in nature</b>, over <b>60 minerals, elements & 21 amino acids</b>. Naturally contains <b>Hydrolyzed Proteins & amino acid, Humic acid, Polysaccharides, Oceanic Plant Extract, Microbial metabolites.</b></p>
+              <div className="grid md:grid-cols-2 gap-3 mt-5">
+                <div className="bg-white rounded-2xl p-4 border border-stone-100">
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#1a5c2a]">Key Benefits</div>
+                  <ul className="mt-2 space-y-1.5 text-xs text-[#0e2e1f]">
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Promotes growth & photosynthetic activity</li>
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Protects from environmental stress</li>
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Improves nutrient absorption & transport</li>
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Stimulates root growth, flowering & fruiting</li>
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Better fruit quality & soil micro flora</li>
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Safe, non-toxic, organic</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-2xl p-4 border border-stone-100">
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#5a6b5a]">Composition</div>
+                  <p className="text-xs text-[#5a6b5a] leading-relaxed mt-2">Over 60 minerals, elements & 21 amino acids. Hydrolyzed Proteins & amino acid, Humic acid, Polysaccharides, Oceanic Plant Extract, Microbial metabolites. Seaweed Extract base — naturally derived.</p>
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#5a6b5a] mt-4">Used For</div>
+                  <p className="text-xs text-[#1a5c2a] font-medium leading-relaxed mt-1">Vegetable & fruit crops like <b>Paddy, Wheat, Sugarcane, Cotton, Chilli, Potato, Tomato, Soyabean, Onion, Garlic, Apple, Banana, Grapes, Tea</b> and all major fields & horticulture crops.</p>
+                </div>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <span className="bg-[#e8f5e9] px-3 py-1.5 rounded-full text-xs font-bold text-[#0e2e1f]">Seaweed Extract</span>
+                <span className="bg-[#e8f5e9] px-3 py-1.5 rounded-full text-xs font-bold text-[#0e2e1f]">60+ Minerals</span>
+                <span className="bg-[#e8f5e9] px-3 py-1.5 rounded-full text-xs font-bold text-[#0e2e1f]">21 Amino Acids</span>
+                <span className="bg-[#e8f5e9] px-3 py-1.5 rounded-full text-xs font-bold text-[#0e2e1f]">Humic Acid</span>
+                <span className="bg-[#e8f5e9] px-3 py-1.5 rounded-full text-xs font-bold text-[#0e2e1f]">Organic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* More products from farmer range */}
         <div className="mt-10">
           <h3 className="font-display text-lg font-bold text-[#0e2e1f]">Also Available — Farmer-Trusted Range</h3>
@@ -206,6 +264,27 @@ export default function Products() {
             </div>
             <div className="p-7">
               <p className="text-sm text-[#5a6b5a] leading-relaxed">{selected.desc}</p>
+              {"details" in selected && selected.details && (
+                <div className="mt-5 bg-[#f8f5ee] rounded-2xl p-4 text-sm text-[#0e2e1f] leading-relaxed border border-stone-100">
+                  <div className="font-bold text-xs tracking-widest uppercase text-[#1a5c2a] mb-2">Product Details — 100ml • ₹180 — Seaweed Extract</div>
+                  <p className="text-xs text-[#5a6b5a] leading-relaxed">{(selected as any).details}</p>
+                </div>
+              )}
+              {"bullets" in selected && (selected as any).bullets && (
+                <ul className="mt-4 space-y-2">
+                  {(selected as any).bullets.map((b: string) => (
+                    <li key={b} className="flex gap-2 text-xs text-[#0e2e1f]"><span className="w-5 h-5 rounded-full bg-[#e8f5e9] flex items-center justify-center text-[#1a5c2a] text-[10px] shrink-0">✓</span><span>{b}</span></li>
+                  ))}
+                </ul>
+              )}
+              {"composition" in selected && (selected as any).composition && (
+                <div className="mt-4 bg-white border border-stone-100 rounded-2xl p-4">
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#5a6b5a]">Composition</div>
+                  <p className="text-xs text-[#5a6b5a] leading-relaxed mt-1">{(selected as any).composition}</p>
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#5a6b5a] mt-3">Used For</div>
+                  <p className="text-xs text-[#1a5c2a] leading-relaxed mt-1 font-medium">{(selected as any).crops}</p>
+                </div>
+              )}
               <div className="flex flex-wrap gap-2 mt-4">
                 {selected.benefits.map((b) => (
                   <span key={b} className="bg-[#e8f5e9] rounded-full px-3 py-1 text-xs font-semibold text-[#0e2e1f]">{b}</span>
