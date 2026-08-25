@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HeroSlideshow from "./components/HeroSlideshow";
+import HappyFarmers from "./components/HappyFarmers";
 
 export default function Home() {
   return (
@@ -96,6 +97,8 @@ export default function Home() {
         </div>
       </section>
 
+      <HappyFarmers />
+
       {/* Agriculture Showcase Masonry */}
       <section className="max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:py-24">
         <div className="text-center max-w-2xl mx-auto mb-10">
@@ -108,28 +111,28 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
           <div className="rounded-[24px] overflow-hidden row-span-2">
-            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80" alt="Farm" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/digitalagro/farmer-1.jpg" alt="Happy Farmer — Ridge Gourd" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="rounded-[24px] overflow-hidden">
             <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="Plantation" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="rounded-[24px] overflow-hidden row-span-2">
-            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80" alt="Crops" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/digitalagro/farmer-4.jpg" alt="Sapan Sarkar — Chilli & Ginger" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="rounded-[24px] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&q=80" alt="Fields" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/digitalagro/farmer-5.jpg" alt="Paddy Field BioVera" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="rounded-[24px] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" alt="Sunrise farm" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/digitalagro/farmer-7.jpg" alt="Brinjal Farmer" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="rounded-[24px] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="Trees" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/digitalagro/farmer-6.jpg" alt="Independence Day Farmer" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="rounded-[24px] overflow-hidden lg:col-span-2">
             <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1000&q=80" alt="Agriculture" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="rounded-[24px] overflow-hidden hidden lg:block">
-            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Farm landscape" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/digitalagro/farmer-2.jpg" alt="Ridge Gourd Farmer" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
           </div>
         </div>
         <div className="text-center mt-8">

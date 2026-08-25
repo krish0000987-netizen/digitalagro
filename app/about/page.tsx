@@ -39,7 +39,7 @@ export default function About() {
           </div>
           <div className="relative">
             <div className="rounded-[32px] overflow-hidden shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80" alt="Our story" className="w-full h-[560px] object-cover" />
+              <img src="/digitalagro/farmer-7.jpg" alt="Our story — Digital Agro Farmer" className="w-full h-[560px] object-cover object-top" />
             </div>
             <div className="absolute bottom-6 left-6 right-6 lg:left-auto lg:w-[320px] bg-white rounded-3xl p-6 shadow-xl border border-stone-100">
               <div className="flex items-center gap-2 mb-3"><span className="w-2 h-2 bg-[#1a5c2a] rounded-full" /><span className="text-xs font-bold tracking-widest uppercase text-[#5a6b5a]">Our Approach</span></div>
@@ -94,10 +94,20 @@ export default function About() {
         </div>
       </section>
 
+      {/* Happy Farmer Banner — Real Photos */}
+      <section className="max-w-[1440px] mx-auto px-6 lg:px-8 pb-8">
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="rounded-[24px] overflow-hidden h-[340px]"><img src="/digitalagro/farmer-1.jpg" alt="Safikul Kabiraj" className="w-full h-full object-cover object-top" /></div>
+          <div className="rounded-[24px] overflow-hidden h-[340px]"><img src="/digitalagro/farmer-4.jpg" alt="Sapan Sarkar" className="w-full h-full object-cover object-top" /></div>
+          <div className="rounded-[24px] overflow-hidden h-[340px]"><img src="/digitalagro/farmer-6.jpg" alt="Happy Farmer Independence Day" className="w-full h-full object-cover object-top" /></div>
+        </div>
+        <p className="text-center text-xs text-[#6b7c6b] mt-3">Real farmers from your <b>photosdigitalagro</b> collection — Safikul Kabiraj, Sapan Sarkar and more — now featured across the site.</p>
+      </section>
+
       {/* Image section */}
       <section className="max-w-[1440px] mx-auto px-6 lg:px-8 pb-16">
         <div className="relative rounded-[32px] overflow-hidden h-[420px] lg:h-[520px]">
-          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1920&q=80" alt="Farm panorama" className="w-full h-full object-cover" />
+          <img src="/digitalagro/farmer-5.jpg" alt="Paddy field Digital Agro" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f12]/80 via-[#0a1f12]/30 to-transparent" />
           <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-center max-w-2xl">
             <h3 className="font-display text-2xl lg:text-4xl font-bold text-white leading-tight">Every Field Has a Story.<br /><span className="italic font-normal text-[#a8e0a8]">Let’s Write Yours.</span></h3>

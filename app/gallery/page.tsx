@@ -3,6 +3,13 @@ import { useState } from "react";
 import Link from "next/link";
 
 const images = [
+  { src: "/digitalagro/farmer-1.jpg", cat: "Happy Farmer", label: "Safikul Kabiraj — Ridge Gourd" },
+  { src: "/digitalagro/farmer-4.jpg", cat: "Happy Farmer", label: "Sapan Sarkar — Chilli & Ginger" },
+  { src: "/digitalagro/farmer-5.jpg", cat: "Happy Farmer", label: "Paddy Farmer — BioVera Plus" },
+  { src: "/digitalagro/farmer-6.jpg", cat: "Happy Farmer", label: "Independence Day — 80 Gold" },
+  { src: "/digitalagro/farmer-7.jpg", cat: "Happy Farmer", label: "Brinjal Farmer — Digital Agro Service" },
+  { src: "/digitalagro/farmer-2.jpg", cat: "Happy Farmer", label: "Ridge Gourd — AgroVera" },
+  { src: "/digitalagro/farmer-3.jpg", cat: "Happy Farmer", label: "Digital Agro Farming Service" },
   { src: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80", cat: "Fields", label: "Lush Agricultural Field" },
   { src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80", cat: "Plantation", label: "Tree Plantation" },
   { src: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=80", cat: "Farming", label: "Modern Farming" },
@@ -11,13 +18,9 @@ const images = [
   { src: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80", cat: "Trees", label: "Tropical Trees" },
   { src: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80", cat: "Projects", label: "Farm Development" },
   { src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80", cat: "Fields", label: "Green Farm Panorama" },
-  { src: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80", cat: "Trees", label: "Plantation Field" },
-  { src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80", cat: "Nature", label: "Forest Plantation" },
-  { src: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=80", cat: "Projects", label: "Agricultural Operations" },
-  { src: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80", cat: "Farming", label: "Field Preparation" },
 ];
 
-const cats = ["All", "Farming", "Plantation", "Trees", "Fields", "Projects", "Agriculture", "Nature"];
+const cats = ["All", "Happy Farmer", "Farming", "Plantation", "Trees", "Fields", "Projects", "Agriculture", "Nature"];
 
 export default function Gallery() {
   const [filter, setFilter] = useState("All");
@@ -26,7 +29,7 @@ export default function Gallery() {
   return (
     <div className="bg-[#fdfcf8]">
       <section className="relative h-[480px] flex items-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80" alt="Gallery hero" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/digitalagro/farmer-1.jpg" alt="Gallery hero" className="absolute inset-0 w-full h-full object-cover object-top" />
         <div className="absolute inset-0 bg-[#0a1f12]/60" />
         <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8 w-full pt-16">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-2 mb-5"><span className="w-1.5 h-1.5 bg-[#7bc47f] rounded-full" /><span className="text-white/90 text-xs tracking-widest uppercase font-semibold">Gallery / Projects</span></div>
