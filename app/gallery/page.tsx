@@ -3,6 +3,11 @@ import { useState } from "react";
 import Link from "next/link";
 
 const images = [
+  { src: "/products/active-80-100ml-140.jpg", cat: "Products", label: "ACTIVE-80 100 ml — ₹140" },
+  { src: "/products/activmax-100ml-180.jpg", cat: "Products", label: "ACTIVMAX 100 ml — ₹180" },
+  { src: "/products/active-80-gold-500ml-700.jpg", cat: "Products", label: "ACTIVE-80 GOLD 500 ml — ₹700" },
+  { src: "/products/activmax-500ml-800.jpg", cat: "Products", label: "ACTIVMAX 500 ml — ₹800 (Best Seller)" },
+  { src: "/products/active-80-5ltr-4500.jpg", cat: "Products", label: "ACTIVE-80 5 Ltr — ₹4,500" },
   { src: "/digitalagro/farmer-1.jpg", cat: "Happy Farmer", label: "Safikul Kabiraj — Ridge Gourd" },
   { src: "/digitalagro/farmer-4.jpg", cat: "Happy Farmer", label: "Sapan Sarkar — Chilli & Ginger" },
   { src: "/digitalagro/farmer-5.jpg", cat: "Happy Farmer", label: "Paddy Farmer — BioVera Plus" },
@@ -20,7 +25,7 @@ const images = [
   { src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80", cat: "Fields", label: "Green Farm Panorama" },
 ];
 
-const cats = ["All", "Happy Farmer", "Farming", "Plantation", "Trees", "Fields", "Projects", "Agriculture", "Nature"];
+const cats = ["All", "Products", "Happy Farmer", "Farming", "Plantation", "Trees", "Fields", "Projects", "Agriculture", "Nature"];
 
 export default function Gallery() {
   const [filter, setFilter] = useState("All");

@@ -99,6 +99,51 @@ export default function Home() {
 
       <HappyFarmers />
 
+      {/* Featured Products — Real Pricing */}
+      <section className="bg-white py-16 lg:py-20 border-y border-stone-100">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-[#e8f5e9] rounded-full px-4 py-2 mb-4">
+                <span className="w-1.5 h-1.5 bg-[#1a5c2a] rounded-full" />
+                <span className="text-xs font-bold tracking-widest uppercase text-[#14532d]">Products • Real Pricing</span>
+              </div>
+              <h2 className="font-display text-[32px] lg:text-[44px] font-bold leading-none text-[#0e2e1f]">Our Best-Selling <span className="italic font-normal text-[#1a5c2a]">Products</span></h2>
+              <p className="text-[#6b7c6b] text-sm mt-3">From your <b>products</b> folder — pricing exactly as per file names, now live with real bottle images.</p>
+            </div>
+            <Link href="/products" className="inline-flex items-center gap-2 border border-stone-200 bg-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-[#0e2e1f] hover:text-white">View All Products →</Link>
+          </div>
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-5">
+            {[
+              { name: "ACTIVE-80", var: "100 ml", price: "₹140", img: "/products/active-80-100ml-140.jpg", tag: "100ml" },
+              { name: "ACTIVMAX", var: "100 ml", price: "₹180", img: "/products/activmax-100ml-180.jpg", tag: "100ml" },
+              { name: "ACTIVE-80 GOLD", var: "500 ml", price: "₹700", img: "/products/active-80-gold-500ml-700.jpg", tag: "GOLD" },
+              { name: "ACTIVMAX", var: "500 ml", price: "₹800", img: "/products/activmax-500ml-800.jpg", tag: "Best Seller" },
+              { name: "ACTIVE-80", var: "5 Ltr", price: "₹4,500", img: "/products/active-80-5ltr-4500.jpg", tag: "5 LTR" },
+            ].map((p) => (
+              <Link key={p.name + p.var} href="/products" className="group bg-[#fdfcf8] rounded-[24px] border border-stone-100 overflow-hidden hover:shadow-lg transition-all">
+                <div className="bg-white p-6 flex flex-col items-center h-56">
+                  <span className="self-start bg-[#0e2e1f] text-white text-[10px] font-bold tracking-widest px-2 py-1 rounded-full">{p.tag}</span>
+                  <img src={p.img} alt={p.name} className="w-28 h-32 object-contain mt-2 group-hover:scale-105 transition-transform" />
+                </div>
+                <div className="p-4 bg-white border-t border-stone-100">
+                  <div className="font-bold text-sm text-[#0e2e1f] leading-none">{p.name}</div>
+                  <div className="text-xs text-[#6b7c6b]">{p.var}</div>
+                  <div className="flex items-center justify-between mt-3">
+                    <span className="bg-[#e8f5e9] text-[#0e2e1f] px-3 py-1 rounded-full font-bold text-sm">{p.price}</span>
+                    <span className="text-xs font-bold text-[#1a5c2a] group-hover:gap-1 flex items-center gap-1">Order →</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-6 bg-[#0e2e1f] rounded-2xl px-5 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-white">
+            <span className="text-sm">💬 Order any product on WhatsApp — instant price confirmation at <b>+91 95930 69126</b></span>
+            <a href="https://wa.me/919593069126?text=Hello%20I%20want%20product%20price%20list" target="_blank" className="bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm whitespace-nowrap">Get Price List</a>
+          </div>
+        </div>
+      </section>
+
       {/* Agriculture Showcase Masonry */}
       <section className="max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:py-24">
         <div className="text-center max-w-2xl mx-auto mb-10">
