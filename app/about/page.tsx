@@ -6,11 +6,11 @@ export default function About() {
   return (
     <div className="bg-[#fdfcf8]">
       {/* Hero */}
-      <section className="relative h-[520px] flex items-center overflow-hidden">
+      <section className="relative h-[400px] sm:h-[460px] lg:h-[520px] flex items-center overflow-hidden">
         <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80" alt="About hero" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-[#0a1f12]/60" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f12]/70 to-transparent" />
-        <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8 w-full pt-16">
+        <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 sm:pt-16">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-2 mb-5">
             <span className="w-1.5 h-1.5 bg-[#7bc47f] rounded-full" />
             <span className="text-white/90 text-xs tracking-widest uppercase font-semibold">About Us</span>

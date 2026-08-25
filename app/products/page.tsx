@@ -88,7 +88,7 @@ export default function Products() {
   const [selected, setSelected] = useState<(typeof products)[0] | null>(null);
   return (
     <div className="bg-[#fdfcf8]">
-      <section className="relative h-[560px] flex items-center overflow-hidden">
+      <section className="relative h-[400px] sm:h-[480px] lg:h-[560px] flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0e2e1f] via-[#14532d] to-[#0e2e1f]" />
         <div className="absolute right-0 top-0 bottom-0 w-[55%] hidden lg:flex items-center justify-center gap-4 p-8 opacity-95">
           <div className="grid grid-cols-3 gap-3">
@@ -100,7 +100,7 @@ export default function Products() {
             ))}
           </div>
         </div>
-        <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8 w-full pt-16">
+        <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 sm:pt-16">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-2 mb-5"><span className="w-1.5 h-1.5 bg-[#7bc47f] rounded-full animate-pulse" /><span className="text-white/90 text-xs tracking-widest uppercase font-semibold">Products • Pricing as per Your Documents</span></div>
           <h1 className="font-display text-[36px] lg:text-[58px] font-bold leading-none text-white">Our Products<br /><span className="italic font-normal text-[#a8e0a8]">With Real Pricing</span></h1>
           <p className="text-white/80 max-w-xl mt-4 text-sm leading-relaxed">5 real product variants from <b>/Downloads/products</b> — pricing exactly as named in your files. Tap any product to order via WhatsApp.</p>

@@ -15,10 +15,10 @@ const posts = [
 export default function Blog() {
   return (
     <div className="bg-[#fdfcf8]">
-      <section className="relative h-[480px] flex items-center overflow-hidden">
+      <section className="relative h-[360px] sm:h-[420px] lg:h-[480px] flex items-center overflow-hidden">
         <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1920&q=80" alt="Blog hero" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-[#0a1f12]/60" />
-        <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8 w-full pt-16">
+        <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 sm:pt-16">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-2 mb-5"><span className="w-1.5 h-1.5 bg-[#7bc47f] rounded-full" /><span className="text-white/90 text-xs tracking-widest uppercase font-semibold">Blog / Insights</span></div>
           <h1 className="font-display text-[38px] lg:text-[58px] font-bold leading-none text-white">Agriculture Insights<br /><span className="italic font-normal text-[#a8e0a8]">& Farming Knowledge</span></h1>
           <p className="text-white/80 max-w-xl mt-4 text-sm leading-relaxed">Knowledge, tips and ideas for modern agriculture — editable articles the owner can update anytime.</p>

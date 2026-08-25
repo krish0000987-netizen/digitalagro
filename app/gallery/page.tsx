@@ -33,10 +33,10 @@ export default function Gallery() {
   const filtered = filter === "All" ? images : images.filter((i) => i.cat === filter);
   return (
     <div className="bg-[#fdfcf8]">
-      <section className="relative h-[480px] flex items-center overflow-hidden">
+      <section className="relative h-[360px] sm:h-[420px] lg:h-[480px] flex items-center overflow-hidden">
         <img src="/digitalagro/farmer-1.jpg" alt="Gallery hero" className="absolute inset-0 w-full h-full object-cover object-top" />
         <div className="absolute inset-0 bg-[#0a1f12]/60" />
-        <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8 w-full pt-16">
+        <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 sm:pt-16">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-2 mb-5"><span className="w-1.5 h-1.5 bg-[#7bc47f] rounded-full" /><span className="text-white/90 text-xs tracking-widest uppercase font-semibold">Gallery / Projects</span></div>
           <h1 className="font-display text-[40px] lg:text-[60px] font-bold leading-none text-white">Our Agricultural<br /><span className="italic font-normal text-[#a8e0a8]">World</span></h1>
           <p className="text-white/80 max-w-xl mt-4 text-sm leading-relaxed">A curated collection of fields, plantations and agricultural landscapes.</p>
