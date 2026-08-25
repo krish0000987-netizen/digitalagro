@@ -141,6 +141,41 @@ export default function Home() {
             <span className="text-sm">💬 Order any product on WhatsApp — instant price confirmation at <b>+91 95930 69126</b></span>
             <a href="https://wa.me/919593069126?text=Hello%20I%20want%20product%20price%20list" target="_blank" className="bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm whitespace-nowrap">Get Price List</a>
           </div>
+
+          {/* ACTIVMAX 100ml • ₹180 — Full Details on Homepage */}
+          <div className="mt-8 bg-gradient-to-br from-[#e3f2fd] to-white rounded-[28px] border-2 border-[#90caf9] overflow-hidden">
+            <div className="grid lg:grid-cols-[360px_1fr] gap-0">
+              <div className="bg-white p-8 flex flex-col items-center justify-center border-b lg:border-b-0 lg:border-r border-stone-100">
+                <div className="bg-[#0e2e1f] text-white text-[11px] font-bold tracking-widest px-3 py-1.5 rounded-full mb-4">FEATURED • 100ML • ₹180</div>
+                <img src="/products/activmax-100ml-180.jpg" alt="ACTIVMAX 100ml" className="w-40 h-52 object-contain" />
+                <h3 className="font-display text-xl font-bold text-[#0e2e1f] mt-4">ACTIVMAX</h3>
+                <p className="text-xs font-bold tracking-widest uppercase text-[#1a5c2a]">Seaweed Extract Biostimulant</p>
+                <div className="mt-3 bg-[#c9a86a] text-[#0e2e1f] px-6 py-2 rounded-full font-bold text-sm">100 ml — ₹180</div>
+                <a href="https://wa.me/919593069126?text=Hello%20I%20want%20to%20order%20ACTIVMAX%20100ml%20at%20Rs.180" target="_blank" className="mt-4 w-full bg-[#1a5c2a] text-white rounded-full py-3 font-bold text-sm text-center hover:bg-black">Order Now →</a>
+                <Link href="/products" className="mt-2 text-xs font-bold text-[#1a5c2a]">View All Details →</Link>
+              </div>
+              <div className="p-6 lg:p-8">
+                <div className="inline-flex items-center gap-2 bg-[#e8f5e9] rounded-full px-3 py-1.5 mb-3">
+                  <span className="w-1.5 h-1.5 bg-[#1a5c2a] rounded-full" />
+                  <span className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f]">Seaweed Extract • Safe & Organic</span>
+                </div>
+                <h4 className="font-display text-lg font-bold text-[#0e2e1f] leading-tight">ACTIVMAX — Derived from Seaweed Extracts</h4>
+                <p className="text-sm text-[#0e2e1f] leading-relaxed mt-3">Promotes plant growth, improves photosynthetic activity, protects from environmental stress, improves absorption & transport of nutrients. <b>Safe & non-toxic</b> — maximizes growth, yield, germination, root growth, flowering & fruiting.</p>
+                <div className="grid md:grid-cols-2 gap-3 mt-5">
+                  <ul className="space-y-1.5 text-xs text-[#0e2e1f] bg-white rounded-2xl p-4 border border-stone-100">
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Better fruit quality & soil micro flora</li>
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> 60+ minerals & 21 amino acids</li>
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Hydrolyzed Proteins, Humic Acid</li>
+                    <li className="flex gap-2"><span className="text-[#1a5c2a]">✓</span> Polysaccharides, Oceanic Extract</li>
+                  </ul>
+                  <div className="bg-white rounded-2xl p-4 border border-stone-100">
+                    <div className="text-xs font-bold tracking-widest uppercase text-[#5a6b5a]">Used For</div>
+                    <p className="text-xs text-[#1a5c2a] font-medium leading-relaxed mt-1">Paddy, Wheat, Sugarcane, Cotton, Chilli, Potato, Tomato, Soyabean, Onion, Garlic, Apple, Banana, Grapes, Tea + all field & horticulture crops</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
