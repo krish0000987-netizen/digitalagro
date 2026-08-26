@@ -202,20 +202,20 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white rounded-[24px] p-4 sm:p-5 flex flex-col items-center text-center">
-                <img src="/qr/qr-website.png" alt="Scan to visit website QR - Digital Agro" className="w-36 h-36 sm:w-44 sm:h-44 object-contain" loading="lazy" />
+                <img src="/qr/qr-website.png" loading="eager" decoding="async" width="300" height="300"  alt="Scan to visit website QR - Digital Agro" className="w-36 h-36 sm:w-44 sm:h-44 object-contain"  />
                 <div className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f] mt-3">Scan to Visit<br />Website</div>
-                <div className="text-[11px] text-[#6b7c6b] mt-1">github.com/digitalagro</div>
-                <a href="https://github.com/krish0000987-netizen/digitalagro" target="_blank" className="mt-2 text-xs font-bold text-[#1a5c2a]">Open →</a>
+                <div className="text-[11px] text-[#6b7c6b] mt-1">digitalagro.vercel.app</div>
+                <a href="https://digitalagro.vercel.app" target="_blank" className="mt-2 text-xs font-bold text-[#1a5c2a]">Open →</a>
               </div>
               <div className="bg-[#e8f5e9] rounded-[24px] p-4 sm:p-5 flex flex-col items-center text-center border-2 border-[#a8e0a8]">
-                <img src="/qr/qr-whatsapp.png" alt="Scan to WhatsApp QR" className="w-36 h-36 sm:w-44 sm:h-44 object-contain" loading="lazy" />
+                <img src="/qr/qr-whatsapp.png" loading="eager" decoding="async" width="300" height="300"  alt="Scan to WhatsApp QR" className="w-36 h-36 sm:w-44 sm:h-44 object-contain"  />
                 <div className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f] mt-3">Scan to<br />WhatsApp</div>
                 <div className="text-[11px] text-[#6b7c6b] mt-1">+91 95930 69126</div>
                 <a href="https://wa.me/919593069126" target="_blank" className="mt-2 bg-[#25D366] text-white px-4 py-1.5 rounded-full text-xs font-bold">Chat Now →</a>
               </div>
             </div>
           </div>
-          <p className="relative text-center text-xs text-white/40 mt-6">QR generated for <code className="bg-white/10 px-2 py-1 rounded">https://github.com/krish0000987-netizen/digitalagro</code> & WhatsApp — also available at <code className="bg-white/10 px-2 py-1 rounded">/qr/qr-website.png</code></p>
+          <p className="relative text-center text-xs text-white/40 mt-6">QR generated for <code className="bg-white/10 px-2 py-1 rounded">https://digitalagro.vercel.app</code> & WhatsApp — also available at <code className="bg-white/10 px-2 py-1 rounded">/qr/qr-website.png</code></p>
         </div>
       </section>
 

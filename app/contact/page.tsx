@@ -68,15 +68,15 @@ export default function Contact() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-[#f8f5ee] rounded-2xl p-4 flex flex-col items-center text-center">
                   <div className="bg-white rounded-2xl p-2 shadow-sm">
-                    <img src="/qr/qr-website.png" alt="Scan to visit website QR" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" loading="lazy" />
+                    <img src="/qr/qr-website.png" loading="eager" decoding="async" width="300" height="300"  alt="Scan to visit website QR" className="w-28 h-28 sm:w-32 sm:h-32 object-contain"  />
                   </div>
                   <div className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f] mt-3">Scan to Visit<br />Website</div>
-                  <div className="text-[11px] text-[#6b7c6b] mt-1">github.com/digitalagro</div>
-                  <a href="https://github.com/krish0000987-netizen/digitalagro" target="_blank" className="mt-2 text-xs font-bold text-[#1a5c2a]">Open Link →</a>
+                  <div className="text-[11px] text-[#6b7c6b] mt-1">digitalagro.vercel.app</div>
+                  <a href="https://digitalagro.vercel.app" target="_blank" className="mt-2 text-xs font-bold text-[#1a5c2a]">Open Link →</a>
                 </div>
                 <div className="bg-[#e8f5e9] rounded-2xl p-4 flex flex-col items-center text-center border border-[#c8e6c9]">
                   <div className="bg-white rounded-2xl p-2 shadow-sm">
-                    <img src="/qr/qr-whatsapp.png" alt="Scan to WhatsApp QR" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" loading="lazy" />
+                    <img src="/qr/qr-whatsapp.png" loading="eager" decoding="async" width="300" height="300"  alt="Scan to WhatsApp QR" className="w-28 h-28 sm:w-32 sm:h-32 object-contain"  />
                   </div>
                   <div className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f] mt-3">Scan to<br />WhatsApp Us</div>
                   <div className="text-[11px] text-[#6b7c6b] mt-1">+91 95930 69126</div>

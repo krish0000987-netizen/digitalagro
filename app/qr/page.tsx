@@ -44,15 +44,15 @@ export default function QRPage() {
             <div className="p-6 sm:p-8 flex flex-col items-center text-center">
               <div className="bg-[#f8f5ee] rounded-[24px] p-4 sm:p-6 border-2 border-stone-100">
                 <div className="bg-white rounded-2xl p-3 sm:p-4 shadow-md">
-                  <img src="/qr/qr-website.png" alt="QR code to visit Digital Agro Farming Services website" className="w-64 h-64 sm:w-72 sm:h-72 object-contain" loading="eager" />
+                  <img src="/qr/qr-website.png" loading="eager" decoding="async" width="300" height="300"  alt="QR code to visit Digital Agro Farming Services website" className="w-64 h-64 sm:w-72 sm:h-72 object-contain" />
                 </div>
               </div>
               <h3 className="font-display text-xl font-bold text-[#0e2e1f] mt-6">Digital Agro Farming Services</h3>
               <p className="text-xs font-bold tracking-widest uppercase text-[#1a5c2a] mt-1">Website QR</p>
-              <p className="text-sm text-[#6b7c6b] mt-3 max-w-sm leading-relaxed">Scans to <code className="bg-[#f8f5ee] px-2 py-1 rounded text-xs font-mono break-all">https://github.com/krish0000987-netizen/digitalagro</code><br /><span className="text-xs">Update to <code className="bg-[#e8f5e9] px-1 rounded">digitalagro.vercel.app</code> once live</span></p>
+              <p className="text-sm text-[#6b7c6b] mt-3 max-w-sm leading-relaxed">Scans to <code className="bg-[#f8f5ee] px-2 py-1 rounded text-xs font-mono break-all">https://digitalagro.vercel.app</code><br /><span className="text-xs">Update to <code className="bg-[#e8f5e9] px-1 rounded">digitalagro.vercel.app</code> once live</span></p>
               <div className="flex gap-3 mt-6 w-full sm:w-auto">
                 <a href="/qr/qr-website.png" download="Digital-Agro-Website-QR.png" className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 bg-[#0e2e1f] text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-black">⬇ Download QR</a>
-                <a href="https://github.com/krish0000987-netizen/digitalagro" target="_blank" className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 border border-stone-200 px-6 py-3 rounded-full font-bold text-sm hover:bg-[#f8f5ee]">Open Site →</a>
+                <a href="https://digitalagro.vercel.app" target="_blank" className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 border border-stone-200 px-6 py-3 rounded-full font-bold text-sm hover:bg-[#f8f5ee]">Open Site →</a>
               </div>
               <p className="text-[11px] text-[#9a9a9a] mt-3">Print size: 4×4 cm minimum for reliable scan</p>
             </div>
@@ -70,7 +70,7 @@ export default function QRPage() {
             <div className="p-6 sm:p-8 flex flex-col items-center text-center">
               <div className="bg-[#e8f5e9] rounded-[24px] p-4 sm:p-6 border-2 border-[#c8e6c9]">
                 <div className="bg-white rounded-2xl p-3 sm:p-4 shadow-md">
-                  <img src="/qr/qr-whatsapp.png" alt="QR code to chat on WhatsApp +91 95930 69126" className="w-64 h-64 sm:w-72 sm:h-72 object-contain" loading="eager" />
+                  <img src="/qr/qr-whatsapp.png" loading="eager" decoding="async" width="300" height="300"  alt="QR code to chat on WhatsApp +91 95930 69126" className="w-64 h-64 sm:w-72 sm:h-72 object-contain" />
                 </div>
               </div>
               <h3 className="font-display text-xl font-bold text-[#0e2e1f] mt-6">Chat on WhatsApp</h3>
@@ -89,7 +89,7 @@ export default function QRPage() {
         <div className="mt-8 grid lg:grid-cols-[1fr_1.4fr] gap-6">
           <div className="bg-[#f8f5ee] rounded-[24px] border border-stone-100 p-6 flex gap-4 items-center">
             <div className="bg-white rounded-2xl p-3 shadow-sm shrink-0">
-              <img src="/qr/qr-live-site.png" alt="Live site QR" className="w-24 h-24 object-contain" loading="lazy" />
+              <img src="/qr/qr-live-site.png" loading="eager" decoding="async" width="300" height="300"  alt="Live site QR" className="w-24 h-24 object-contain"  />
             </div>
             <div>
               <div className="font-bold text-sm text-[#0e2e1f]">Live Site QR</div>

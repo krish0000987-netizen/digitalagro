@@ -72,12 +72,12 @@ export default function Footer() {
               </div>
               {/* QR Codes - Scannable (Enlarged for Footer) */}
               <div className="grid grid-cols-2 gap-3 pt-4 border-t border-white/10">
-                <a href="https://github.com/krish0000987-netizen/digitalagro" target="_blank" className="bg-white rounded-2xl p-3 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform">
-                  <img src="/qr/qr-website.png" alt="Scan to visit website" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" loading="lazy" />
+                <a href="https://digitalagro.vercel.app" target="_blank" className="bg-white rounded-2xl p-3 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform">
+                  <img src="/qr/qr-website.png" loading="eager" decoding="async" width="300" height="300"  alt="Scan to visit website" className="w-28 h-28 sm:w-32 sm:h-32 object-contain"  />
                   <span className="text-[11px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center leading-tight">Scan to Visit<br />Website</span>
                 </a>
                 <a href="https://wa.me/919593069126?text=Hello%20Digital%20Agro%20Farming%20Services" target="_blank" className="bg-white rounded-2xl p-3 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform">
-                  <img src="/qr/qr-whatsapp.png" alt="Scan to WhatsApp" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" loading="lazy" />
+                  <img src="/qr/qr-whatsapp.png" loading="eager" decoding="async" width="300" height="300"  alt="Scan to WhatsApp" className="w-28 h-28 sm:w-32 sm:h-32 object-contain"  />
                   <span className="text-[11px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center leading-tight">Scan to<br />WhatsApp</span>
                 </a>
               </div>
@@ -90,11 +90,11 @@ export default function Footer() {
         <div className="mt-8 bg-white rounded-[24px] p-5 sm:p-6 flex flex-col lg:flex-row items-center gap-6 shadow-lg">
           <div className="flex gap-3 sm:gap-4 shrink-0">
             <div className="bg-[#f8f5ee] rounded-2xl p-2 sm:p-3 border border-stone-100">
-              <img src="/qr/qr-website.png" alt="Footer QR Website - Scan to visit" className="w-28 h-28 sm:w-36 sm:h-36 object-contain" loading="lazy" />
+              <img src="/qr/qr-website.png" loading="eager" decoding="async" width="300" height="300"  alt="Footer QR Website - Scan to visit" className="w-28 h-28 sm:w-36 sm:h-36 object-contain"  />
               <p className="text-[10px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center mt-2">Website</p>
             </div>
             <div className="bg-[#e8f5e9] rounded-2xl p-2 sm:p-3 border border-[#c8e6c9]">
-              <img src="/qr/qr-whatsapp.png" alt="Footer QR WhatsApp - Scan to chat" className="w-28 h-28 sm:w-36 sm:h-36 object-contain" loading="lazy" />
+              <img src="/qr/qr-whatsapp.png" loading="eager" decoding="async" width="300" height="300"  alt="Footer QR WhatsApp - Scan to chat" className="w-28 h-28 sm:w-36 sm:h-36 object-contain"  />
               <p className="text-[10px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center mt-2">WhatsApp</p>
             </div>
           </div>
