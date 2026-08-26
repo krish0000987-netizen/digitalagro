@@ -13,6 +13,7 @@ const nav = [
   { href: "/gallery", label: "Gallery" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+  { href: "/qr", label: "QR" },
 ];
 
 export default function Header() {

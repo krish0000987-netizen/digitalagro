@@ -37,6 +37,7 @@ export default function Footer() {
                 ["Gallery", "/gallery"],
                 ["Blog", "/blog"],
                 ["Contact", "/contact"],
+                ["QR Codes", "/qr"],
               ].map(([l, h]) => (
                 <li key={l}><Link href={h} className="hover:text-white hover:pl-1 transition-all">{l}</Link></li>
               ))}
