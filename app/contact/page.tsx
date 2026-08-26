@@ -59,6 +59,33 @@ export default function Contact() {
               <span className="ml-auto text-white text-xl">→</span>
             </a>
 
+            {/* Scannable QR Codes */}
+            <div className="bg-white rounded-[24px] border border-stone-100 p-6 shadow-sm">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="w-2 h-2 bg-[#25D366] rounded-full animate-pulse" />
+                <h4 className="font-bold text-sm tracking-widest uppercase text-[#0e2e1f]">Scan to Connect</h4>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-[#f8f5ee] rounded-2xl p-4 flex flex-col items-center text-center">
+                  <div className="bg-white rounded-2xl p-2 shadow-sm">
+                    <img src="/qr/qr-website.png" alt="Scan to visit website QR" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" loading="lazy" />
+                  </div>
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f] mt-3">Scan to Visit<br />Website</div>
+                  <div className="text-[11px] text-[#6b7c6b] mt-1">github.com/digitalagro</div>
+                  <a href="https://github.com/krish0000987-netizen/digitalagro" target="_blank" className="mt-2 text-xs font-bold text-[#1a5c2a]">Open Link →</a>
+                </div>
+                <div className="bg-[#e8f5e9] rounded-2xl p-4 flex flex-col items-center text-center border border-[#c8e6c9]">
+                  <div className="bg-white rounded-2xl p-2 shadow-sm">
+                    <img src="/qr/qr-whatsapp.png" alt="Scan to WhatsApp QR" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" loading="lazy" />
+                  </div>
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f] mt-3">Scan to<br />WhatsApp Us</div>
+                  <div className="text-[11px] text-[#6b7c6b] mt-1">+91 95930 69126</div>
+                  <a href="https://wa.me/919593069126" target="_blank" className="mt-2 bg-[#25D366] text-white px-4 py-1.5 rounded-full text-xs font-bold">Chat Now</a>
+                </div>
+              </div>
+              <p className="text-[11px] text-center text-[#9a9a9a] mt-3">📱 Point your phone camera at QR — opens instantly, no app needed</p>
+            </div>
+
             <div className="bg-[#f8f5ee] border border-stone-200 rounded-[20px] p-6">
               <h4 className="font-semibold text-[#0e2e1f]">Business Location</h4>
               <p className="text-xs text-[#6b7c6b] mt-1">Map placeholder — owner will provide exact location.</p>

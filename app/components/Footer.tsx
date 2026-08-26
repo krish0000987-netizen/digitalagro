@@ -69,6 +69,18 @@ export default function Footer() {
                 <a href="tel:+919593069126" className="flex-1 bg-white text-[#0a1f12] rounded-full py-3 text-center font-semibold text-sm hover:bg-[#f4f1ea]">Call Now</a>
                 <a href="https://wa.me/919593069126?text=Hello%20Digital%20Agro%20Farming%20Services%2C%20I%20would%20like%20to%20know%20more%20about%20your%20agricultural%20services." target="_blank" className="flex-1 bg-[#25D366] text-white rounded-full py-3 text-center font-semibold text-sm">WhatsApp</a>
               </div>
+              {/* QR Codes - Scannable */}
+              <div className="grid grid-cols-2 gap-3 pt-4 border-t border-white/10">
+                <a href="https://github.com/krish0000987-netizen/digitalagro" target="_blank" className="bg-white rounded-2xl p-3 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform">
+                  <img src="/qr/qr-website.png" alt="Scan to visit website" className="w-24 h-24 object-contain" loading="lazy" />
+                  <span className="text-[11px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center leading-tight">Scan to Visit<br />Website</span>
+                </a>
+                <a href="https://wa.me/919593069126?text=Hello%20Digital%20Agro%20Farming%20Services" target="_blank" className="bg-white rounded-2xl p-3 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform">
+                  <img src="/qr/qr-whatsapp.png" alt="Scan to WhatsApp" className="w-24 h-24 object-contain" loading="lazy" />
+                  <span className="text-[11px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center leading-tight">Scan to<br />WhatsApp</span>
+                </a>
+              </div>
+              <p className="text-[11px] text-white/40 text-center">📱 Scan with any camera — opens instantly</p>
             </div>
           </div>
         </div>

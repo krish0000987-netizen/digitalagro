@@ -179,6 +179,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Scannable QR — Homepage */}
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="bg-gradient-to-br from-[#0e2e1f] via-[#14532d] to-[#0e2e1f] rounded-[28px] p-6 sm:p-8 lg:p-10 text-white relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
+          <div className="relative grid lg:grid-cols-[1.2fr_1fr] gap-8 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-2 mb-4">
+                <span className="w-2 h-2 bg-[#7bc47f] rounded-full animate-pulse" />
+                <span className="text-xs font-bold tracking-widest uppercase text-white/90">Scannable QR • Instant Access</span>
+              </div>
+              <h2 className="font-display text-[28px] sm:text-[36px] font-bold leading-none">Scan to Visit <span className="italic font-normal text-[#a8e0a8]">Our Website</span></h2>
+              <p className="text-white/70 text-sm leading-relaxed mt-3 max-w-md">No typing needed — point your phone camera at the QR code and open Digital Agro Farming Services instantly. Save it, print it, share it at your farm or shop.</p>
+              <div className="flex flex-wrap gap-2 mt-5">
+                <span className="bg-white text-[#0e2e1f] px-4 py-2 rounded-full text-xs font-bold">📱 Works on any phone</span>
+                <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full text-xs font-bold">No app required</span>
+              </div>
+              <div className="flex gap-3 mt-6">
+                <a href="tel:+919593069126" className="bg-white text-[#0e2e1f] px-6 py-3 rounded-full font-bold text-sm">Call +91 95930 69126</a>
+                <a href="https://wa.me/919593069126" target="_blank" className="bg-[#25D366] text-white px-6 py-3 rounded-full font-bold text-sm">WhatsApp</a>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white rounded-[24px] p-4 sm:p-5 flex flex-col items-center text-center">
+                <img src="/qr/qr-website.png" alt="Scan to visit website QR - Digital Agro" className="w-36 h-36 sm:w-44 sm:h-44 object-contain" loading="lazy" />
+                <div className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f] mt-3">Scan to Visit<br />Website</div>
+                <div className="text-[11px] text-[#6b7c6b] mt-1">github.com/digitalagro</div>
+                <a href="https://github.com/krish0000987-netizen/digitalagro" target="_blank" className="mt-2 text-xs font-bold text-[#1a5c2a]">Open →</a>
+              </div>
+              <div className="bg-[#e8f5e9] rounded-[24px] p-4 sm:p-5 flex flex-col items-center text-center border-2 border-[#a8e0a8]">
+                <img src="/qr/qr-whatsapp.png" alt="Scan to WhatsApp QR" className="w-36 h-36 sm:w-44 sm:h-44 object-contain" loading="lazy" />
+                <div className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f] mt-3">Scan to<br />WhatsApp</div>
+                <div className="text-[11px] text-[#6b7c6b] mt-1">+91 95930 69126</div>
+                <a href="https://wa.me/919593069126" target="_blank" className="mt-2 bg-[#25D366] text-white px-4 py-1.5 rounded-full text-xs font-bold">Chat Now →</a>
+              </div>
+            </div>
+          </div>
+          <p className="relative text-center text-xs text-white/40 mt-6">QR generated for <code className="bg-white/10 px-2 py-1 rounded">https://github.com/krish0000987-netizen/digitalagro</code> & WhatsApp — also available at <code className="bg-white/10 px-2 py-1 rounded">/qr/qr-website.png</code></p>
+        </div>
+      </section>
+
       {/* Agriculture Showcase Masonry */}
       <section className="max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:py-24">
         <div className="text-center max-w-2xl mx-auto mb-10">
