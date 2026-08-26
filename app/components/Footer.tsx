@@ -70,18 +70,45 @@ export default function Footer() {
                 <a href="tel:+919593069126" className="flex-1 bg-white text-[#0a1f12] rounded-full py-3 text-center font-semibold text-sm hover:bg-[#f4f1ea]">Call Now</a>
                 <a href="https://wa.me/919593069126?text=Hello%20Digital%20Agro%20Farming%20Services%2C%20I%20would%20like%20to%20know%20more%20about%20your%20agricultural%20services." target="_blank" className="flex-1 bg-[#25D366] text-white rounded-full py-3 text-center font-semibold text-sm">WhatsApp</a>
               </div>
-              {/* QR Codes - Scannable */}
+              {/* QR Codes - Scannable (Enlarged for Footer) */}
               <div className="grid grid-cols-2 gap-3 pt-4 border-t border-white/10">
                 <a href="https://github.com/krish0000987-netizen/digitalagro" target="_blank" className="bg-white rounded-2xl p-3 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform">
-                  <img src="/qr/qr-website.png" alt="Scan to visit website" className="w-24 h-24 object-contain" loading="lazy" />
+                  <img src="/qr/qr-website.png" alt="Scan to visit website" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" loading="lazy" />
                   <span className="text-[11px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center leading-tight">Scan to Visit<br />Website</span>
                 </a>
                 <a href="https://wa.me/919593069126?text=Hello%20Digital%20Agro%20Farming%20Services" target="_blank" className="bg-white rounded-2xl p-3 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform">
-                  <img src="/qr/qr-whatsapp.png" alt="Scan to WhatsApp" className="w-24 h-24 object-contain" loading="lazy" />
+                  <img src="/qr/qr-whatsapp.png" alt="Scan to WhatsApp" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" loading="lazy" />
                   <span className="text-[11px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center leading-tight">Scan to<br />WhatsApp</span>
                 </a>
               </div>
               <p className="text-[11px] text-white/40 text-center">📱 Scan with any camera — opens instantly</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Prominent Scannable QR Banner — Footer */}
+        <div className="mt-8 bg-white rounded-[24px] p-5 sm:p-6 flex flex-col lg:flex-row items-center gap-6 shadow-lg">
+          <div className="flex gap-3 sm:gap-4 shrink-0">
+            <div className="bg-[#f8f5ee] rounded-2xl p-2 sm:p-3 border border-stone-100">
+              <img src="/qr/qr-website.png" alt="Footer QR Website - Scan to visit" className="w-28 h-28 sm:w-36 sm:h-36 object-contain" loading="lazy" />
+              <p className="text-[10px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center mt-2">Website</p>
+            </div>
+            <div className="bg-[#e8f5e9] rounded-2xl p-2 sm:p-3 border border-[#c8e6c9]">
+              <img src="/qr/qr-whatsapp.png" alt="Footer QR WhatsApp - Scan to chat" className="w-28 h-28 sm:w-36 sm:h-36 object-contain" loading="lazy" />
+              <p className="text-[10px] font-bold tracking-widest uppercase text-[#0e2e1f] text-center mt-2">WhatsApp</p>
+            </div>
+          </div>
+          <div className="flex-1 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 bg-[#e8f5e9] rounded-full px-3 py-1.5 mb-3">
+              <span className="w-1.5 h-1.5 bg-[#25D366] rounded-full animate-pulse" />
+              <span className="text-xs font-bold tracking-widest uppercase text-[#0e2e1f]">Scannable QR — Footer</span>
+            </div>
+            <h4 className="font-display text-lg sm:text-xl font-bold text-[#0e2e1f] leading-tight">Scan to Visit Instantly — No Typing Needed</h4>
+            <p className="text-sm text-[#5a6b5a] leading-relaxed mt-2">Point your phone camera at the QR codes — <b className="text-[#0e2e1f]">Website</b> opens our site, <b className="text-[#0e2e1f]">WhatsApp</b> starts chat with <b>+91 95930 69126</b>. Save, print, or share at your shop, farm board or visiting card.</p>
+            <div className="flex flex-wrap gap-2 mt-4 justify-center lg:justify-start">
+              <a href="/qr" className="inline-flex items-center gap-2 bg-[#0e2e1f] text-white px-5 py-2.5 rounded-full font-bold text-xs hover:bg-black">View All QRs →</a>
+              <a href="/qr/qr-website.png" download="Digital-Agro-Footer-QR-Website.png" className="inline-flex items-center gap-2 border border-stone-200 px-5 py-2.5 rounded-full font-bold text-xs text-[#0e2e1f] hover:bg-[#f8f5ee]">⬇ Download Website QR</a>
+              <a href="https://wa.me/919593069126" target="_blank" className="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-bold text-xs">WhatsApp Now</a>
             </div>
           </div>
         </div>
